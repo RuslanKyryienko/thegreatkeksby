@@ -13,7 +13,6 @@
     "tests"
   ],
   "dependencies": {
-    "reset-css": "*",
     "normalize.css": "*",
     "jquery": "2.*"
   }

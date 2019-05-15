@@ -1,0 +1,96 @@
+.site-layout__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+  position: relative;
+  background: url("../img/backgrounds/bg-header.jpg")no-repeat;
+  background-size: cover;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.site-header__container {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+
+.site-header__inner-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.header-top__logo {
+  width: 100%;
+  max-width: 205px;
+}
+
+.header-top__main-nav {
+  display: flex;
+  flex-direction: column;
+  margin-left: -70px;
+  margin-bottom: -50px;
+
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-nav__list {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.125em;
+}
+
+.header-nav__list-item {
+  margin: 0 25px;
+}
+
+.header-nav__list-item a {
+  text-transform: uppercase;
+}
+
+.header-btn {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-color: #fff;
+}
+
+.promo a {
+  display: block;
+  padding-top: 135px;
+  padding-bottom: 191px;
+  font-family: Georgia, sans-serif;
+  font-weight: bold;
+  font-size: 2.8em;
+}
+
+.promo {
+  flex-basis: 100%;
+  text-align: center;
+}
