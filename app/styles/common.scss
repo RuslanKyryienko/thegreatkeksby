@@ -178,14 +178,23 @@ html {
   flex-direction: column;
   width: 100%;
   min-width: 320px;
-  max-width: 1980px;
+  max-width: 2560px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .site-layout__container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.site-layout__main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  color: #404040;
+  font-weight: 400;
 }
 
 .btn {
@@ -205,6 +214,7 @@ h2, h3 {
   font-family: Georgia, sans-serif;
   font-weight: bold;
   line-height: 1;
+  color: #a38b70;
 }
 
 h2 {
