@@ -173,6 +173,10 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  display: block;
+}
+
 .site-layout {
   display: flex;
   flex-direction: column;
@@ -197,7 +201,6 @@ html {
 }
 
 .btn {
-  display: block;
   width: 149px;
   padding: 10px;
   font-size: 1.125em;
@@ -207,6 +210,11 @@ html {
   border: 2px solid #a38b70;
   border-radius: 2px;
 
+}
+
+.quick-order {
+  color: #fff;
+  border-color: #fff;
 }
 
 h2, h3 {

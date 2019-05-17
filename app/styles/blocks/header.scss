@@ -55,15 +55,34 @@
   text-transform: uppercase;
 }
 
+.header-nav__list-item a:hover {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #fff;
+  transition: all 0.1s;
+}
+
+.header-nav__list-item a:active {
+  color: #737373;
+  border-color: #737373;
+}
+
 .header-top__btn {
   margin:  7px 0 auto auto;
 }
 
-.header-btn {
-  vertical-align: middle;
+.quick-order-header {
   padding-top: 15px;
   padding-bottom: 15px;
-  border-color: #fff;
+  transition: all 0.1s;
+}
+
+.quick-order-header:hover {
+  color: #404040;
+  background-color: #fff;
+}
+
+.quick-order-header:active {
+  color: #c5c5c5;
 }
 
 .promo {
