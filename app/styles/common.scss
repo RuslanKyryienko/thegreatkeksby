@@ -191,7 +191,6 @@ html {
 .site-layout__main {
   display: flex;
   flex-direction: column;
-  width: 100%;
   font-family: Arial, sans-serif;
   color: #404040;
   font-weight: 400;
@@ -201,7 +200,7 @@ html {
   display: block;
   width: 149px;
   padding: 10px;
-  font: inherit;
+  font-size: 1.125em;
   text-align: center;
   text-transform: uppercase;
   word-wrap: break-word;

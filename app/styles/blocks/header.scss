@@ -38,7 +38,7 @@
 }
 
 .header-top__main-nav {
-  margin: auto;
+  margin: 23px auto auto auto;
   margin-left: 28px;
 }
 
@@ -56,13 +56,13 @@
 }
 
 .header-top__btn {
-  margin: auto;
-  margin-right: 0;
+  margin:  7px 0 auto auto;
 }
 
 .header-btn {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  vertical-align: middle;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-color: #fff;
 }
 
@@ -74,8 +74,8 @@
 
 .promo a {
   display: block;
-  padding-top: 125px;
-  padding-bottom: 204px;
+  padding-top: 122px;
+  padding-bottom: 203px;
   font-family: Georgia, sans-serif;
   font-weight: bold;
   font-size: 2.8em;
