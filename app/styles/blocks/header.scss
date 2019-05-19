@@ -4,12 +4,24 @@
   flex-direction: column;
   flex-grow: 1;
   flex-shrink: 0;
-  position: relative;
   background: url("../img/backgrounds/bg-header.jpg")no-repeat;
   background-size: cover;
 }
 
+.site-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+  color: #fff;
+}
+
 .site-header__container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
   box-sizing: border-box;
   padding-top: 35px;
   padding-left: 30px;
@@ -18,7 +30,9 @@
 }
 
 .site-header__inner-container {
+  position: relative;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   max-width: 1020px;
@@ -29,6 +43,7 @@
 .header-top {
   width: 100%;
   display: flex;
+  flex-direction: row;
 }
 
 .header-top__logo {
@@ -38,12 +53,17 @@
 }
 
 .header-top__main-nav {
-  margin: 23px auto auto auto;
-  margin-left: 28px;
+  margin: 23px auto auto 25px;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
 }
 
 .header-nav__list {
   display: flex;
+  flex-direction: row;
   font-size: 1.125em;
 }
 
@@ -52,13 +72,13 @@
 }
 
 .header-nav__list-item a {
+  padding-bottom: 3px;
   text-transform: uppercase;
+  transition: all 0.1s;
 }
 
 .header-nav__list-item a:hover {
-  padding-bottom: 3px;
   border-bottom: 2px solid #fff;
-  transition: all 0.1s;
 }
 
 .header-nav__list-item a:active {
@@ -70,31 +90,19 @@
   margin:  7px 0 auto auto;
 }
 
-.quick-order-header {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  transition: all 0.1s;
-}
-
-.quick-order-header:hover {
-  color: #404040;
-  background-color: #fff;
-}
-
-.quick-order-header:active {
-  color: #c5c5c5;
-}
-
 .promo {
+  display: flex;
+  flex-direction: column;
   flex-basis: 100%;
+  padding-top: 122px;
+  padding-bottom: 204px;
   text-align: center;
 
 }
 
-.promo a {
-  display: block;
-  padding-top: 122px;
-  padding-bottom: 203px;
+.promo__link {
+  margin-left: auto;
+  margin-right: auto;
   font-family: Georgia, sans-serif;
   font-weight: bold;
   font-size: 2.8em;

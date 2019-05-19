@@ -67,7 +67,7 @@ svg > path {
 }
 
 a {
-  color: #fff;
+  color: inherit;
   text-decoration: none;
 }
 a:active, a:hover {
@@ -164,57 +164,15 @@ select {
   background: transparent;
 }
 /*---End Reset---*/
+
 /*---Custom---*/
 html {
   font-size: 100%;
 }
 
-:before, :after {
-  box-sizing: border-box;
-}
-
 a {
-  display: block;
-}
-
-.site-layout {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-width: 320px;
-  max-width: 2560px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.site-layout__container {
-  display: flex;
-  flex-direction: column;
-}
-
-.site-layout__main {
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, sans-serif;
-  color: #404040;
-  font-weight: 400;
-}
-
-.btn {
-  width: 149px;
-  padding: 10px;
-  font-size: 1.125em;
-  text-align: center;
-  text-transform: uppercase;
-  word-wrap: break-word;
-  border: 2px solid #a38b70;
-  border-radius: 2px;
-
-}
-
-.quick-order {
-  color: #fff;
-  border-color: #fff;
+  cursor: pointer;
+  display: inline-block;
 }
 
 h2, h3, b {
@@ -230,5 +188,87 @@ h2 {
 
 h3, b {
   font-size: 1.5em;
+}
+
+:before, :after {
+  box-sizing: border-box;
+}
+
+.site-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 320px;
+  max-width: 2560px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, sans-serif;
+  color: #404040;
+  font-weight: 400;
+}
+
+.site-layout__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-layout__main {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  min-width: 166px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 1.125em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #a38b70;
+  border: 2px solid #a38b70;
+  border-radius: 2px;
+  transition: all 0.1s;
+}
+
+.btn:hover {
+  color: #8d745a;
+}
+
+.btn:active {
+  color: rgba(141, 116, 90, 0.3);
+}
+
+.btn-quick-order {
+  padding-top: 14px;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-quick-order:hover {
+  color: #404040;
+  background-color: #fff;
+}
+
+.btn-quick-order:active {
+  color: #d2d2d2;
+}
+
+.btn-brown {
+  min-width: 142px;
+  background-color: #a38b70;
+}
+
+.btn-brown:hover {
+  background-color: #8d745a;
+  border-color: #8d745a;
+}
+
+.btn-brown:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-brown-card {
+  min-width: 122px;
 }
 /*---End Custom---*/
