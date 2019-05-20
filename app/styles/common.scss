@@ -271,4 +271,27 @@ h3, b {
 .btn-brown-card {
   min-width: 122px;
 }
+
+.definition-term__link {
+  position: relative;
+  transition: all 0.1s;
+}
+
+.definition-term__link::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 103%;
+  width: 8px;
+  height: 8px;
+  background-color: #8d745a;
+}
+
+.definition-term__link:hover {
+  color: #8d745a;
+}
+
+.definition-term__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 /*---End Custom---*/

@@ -32,20 +32,66 @@
   flex-wrap: wrap;
   width: 100%;
   max-width: 1020px;
+  padding-top: 75px;
+  padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .cat-reference-top {
   width: 100%;
+  padding-bottom: 63px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
 }
 
+.cat-reference-top__section-title {
+  margin: 1px auto auto 0;
+}
+
+.cat-reference-btn {
+  margin: 0 0 auto auto;
+}
+
+.site-cat-reference__definition-term {
+  margin-bottom: 13px;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #000;
+}
+
+.site-cat-reference__definition-term span,
+.site-cat-reference__definition-term a {
+  font-size: 0.66em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.site-cat-reference__definition-term span {
+  color: #666;
+}
+
+.site-cat-reference__definition-term a {
+  color: #8d745a;
+  text-decoration: underline;
+}
+
+.site-cat-reference__definition-description {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.cat-reference-article {
+  margin-bottom: 70px;
+}
+
 .article-img {
-  width: 100px;
+  max-width: 100px;
+  width: 100%;
+  margin-right: 30px;
   height: 100px;
   border-radius: 5px;
 }
@@ -56,4 +102,13 @@
 
 .article-img-2 {
   background: url("../img/article-2.jpg") no-repeat;
+}
+
+.article-part {
+  width: 70%;
+  margin-top: 5px;
+}
+
+.article-text {
+  line-height: 1.3;
 }
