@@ -15,25 +15,8 @@
 }
 
 .site-features__container {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 0;
-  box-sizing: border-box;
   padding-top: 50px;
   padding-bottom: 55px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.site-features__inner-container {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 1020px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .features-layer {

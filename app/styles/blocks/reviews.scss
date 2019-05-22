@@ -15,26 +15,8 @@
 }
 
 .site-reviews__container {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.site-reviews__inner-container {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1020px;
   padding-top: 75px;
   padding-bottom: 90px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .reviews-top {
