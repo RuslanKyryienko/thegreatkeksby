@@ -1,25 +1,10 @@
 .site-layout__header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 0;
   background: url("../img/backgrounds/bg-header.jpg")no-repeat;
   background-size: cover;
 }
 
-.site-header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 0;
-  color: #fff;
-}
-
 .site-header__container {
   padding-top: 35px;
-
 }
 
 .header-top {
@@ -73,9 +58,6 @@
 }
 
 .header-middle {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   padding-top: 122px;
   padding-bottom: 204px;
 

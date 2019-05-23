@@ -177,7 +177,7 @@ a {
 
 h2, h3, b {
   font-family: Georgia, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
   color: #a38b70;
 }
@@ -212,11 +212,6 @@ h3, b {
   flex-direction: column;
 }
 
-.site-layout__main {
-  display: flex;
-  flex-direction: column;
-}
-
 .container {
   box-sizing: border-box;
   display: flex;
@@ -236,6 +231,58 @@ h3, b {
   max-width: 1020px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.site-layout__header,
+.site-layout__features,
+.site-layout__cat-reference,
+.site-layout__reviews,
+.site-layout__footer,
+.site-header,
+.site-features,
+.site-cat-reference,
+.site-reviews,
+.site-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.site-header,
+.site-footer {
+  color: #fff;
+}
+
+.header-top,
+.cat-reference-top,
+.reviews-top,
+.footer-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.cat-reference-top,
+.reviews-top {
+  padding-bottom: 63px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.site-layout__main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-middle,
+.cat-reference-middle,
+.reviews-middle,
+.footer-middle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .btn {

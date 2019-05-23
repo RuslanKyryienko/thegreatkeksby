@@ -1,25 +1,8 @@
 .site-layout__footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 0;
   background: #363636;
 }
 
-.site-footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 0;
-  color: #fff;
-}
-
 .footer-top {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -36,9 +19,6 @@
 }
 
 .footer-middle {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   padding-top: 50px;
   padding-bottom: 70px;
   border: 1px solid #5e5e5e;

@@ -1,32 +1,10 @@
 .site-layout__cat-reference {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 0;
   background: #f2f2f2;
-}
-
-.site-cat-reference {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 0;
 }
 
 .site-cat-reference__container {
   padding-top: 75px;
   padding-bottom: 20px;
-}
-
-.cat-reference-top {
-  width: 100%;
-  padding-bottom: 63px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
 }
 
 .cat-reference-top__section-title {
@@ -35,11 +13,6 @@
 
 .cat-reference-top__btn {
   margin: 0 0 auto auto;
-}
-
-.cat-reference-middle {
-  display: flex;
-  flex-direction: column;
 }
 
 .site-cat-reference__definition-term {
