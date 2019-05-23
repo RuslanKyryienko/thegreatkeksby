@@ -1,9 +1,10 @@
 .site-features__container {
   padding-top: 50px;
-  padding-bottom: 55px;
+  padding-bottom: 90px;
 }
 
 .features-layer {
+  display: flex;
   flex-direction: column;
 }
 

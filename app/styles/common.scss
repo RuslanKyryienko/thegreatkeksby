@@ -266,6 +266,7 @@ h3, b {
 .cat-reference-top,
 .reviews-top,
 .goods-top,
+.goods-bottom,
 .footer-top {
   width: 100%;
   display: flex;
@@ -274,7 +275,8 @@ h3, b {
 
 .cat-reference-top,
 .reviews-top,
-.goods-top {
+.goods-top,
+.goods-bottom {
   padding-bottom: 63px;
   justify-content: space-between;
   align-items: baseline;
