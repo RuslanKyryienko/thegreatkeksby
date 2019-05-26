@@ -1,0 +1,134 @@
+.site-feedback__container {
+  padding-top: 75px;
+  padding-bottom: 90px;
+}
+
+.feedback-top__section-title {
+  margin: 1px auto auto 0;
+}
+
+.feedback-top__tip {
+  align-self: center;
+}
+
+.feedback-layer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 632px;
+  margin-right: 30px;
+}
+
+.feedback-form__container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: 25px;
+  padding-right: 4px;
+  box-sizing: border-box;
+}
+
+.container-contacts {
+  margin-bottom: 30px;
+}
+
+.container-subscribe {
+  margin-bottom: 28px;
+  padding-right: 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #bdbbbc;
+}
+
+.container-form-btn {
+  align-self: flex-start;
+}
+
+.container-message {
+  margin-bottom: 55px;
+}
+
+.inner-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.feedback-phone,
+.feedback-email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 286px;
+}
+
+.feedback-phone {
+  margin-right: 2px;
+}
+.feedback-email {
+  margin-left: 2px;
+}
+
+label {
+  padding-left: 17px;
+  padding-bottom: 12px;
+  font-size: 0.87em;
+  text-transform: uppercase;
+}
+
+.subscribe-label {
+  text-transform: none;
+}
+
+.subscribe-label {
+  font-size: 1.125em;
+  padding-bottom: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  box-sizing: border-box;
+  padding: 18px 5px 15px 15px;
+  font: inherit;
+  border: 2px solid #bdbbbc;
+}
+
+input[type="checkbox"] {
+  padding: 10px;
+  border: 2px solid #bdbbbc;
+}
+
+::placeholder {
+  color: #404040;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #404040;
+  opacity: 1;
+}
+::-ms-input-placeholder {
+  color: #404040;
+  opacity: 1;
+}
+
+.form-img {
+  display: flex;
+}
+
+.feedback-form__img {
+  width: 340px;
+  height: 535px;
+  margin-top: 28px;
+  border-radius: 5px;
+  background: url("../img/feedbackimg.jpg") no-repeat;
+}
