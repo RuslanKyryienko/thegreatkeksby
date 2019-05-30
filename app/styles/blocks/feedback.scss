@@ -85,11 +85,60 @@ label {
 
 .subscribe-label {
   text-transform: none;
-}
-
-.subscribe-label {
   font-size: 1.125em;
   padding-bottom: 0;
+}
+
+.subscribe-label input {
+  display: none;
+}
+
+.subscribe-label__text {
+  display: inline-block;
+  margin-left: 2px;
+}
+
+.fake {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #d5d5d5;
+  border-radius: 2px;
+  transition: all .2s;
+}
+
+.fake:hover {
+  border-color: #b3b3b3;
+}
+
+.fake:active,
+.fake:focus {
+  border-color: #8d745a;
+}
+
+.fake::before {
+  position: absolute;
+  top: 42%;
+  left: 52%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  content: "";
+  display: block;
+  width: 8px;
+  height: 16px;
+  border: 2px solid #a38b70;
+  border-left: none;
+  border-top: none;
+  opacity: 0;
+}
+
+.fake::before:active {
+  border-color: rgba(141, 116, 90, .3);
+}
+
+.subscribe-label input:checked + .fake:before {
+  opacity: 1;
 }
 
 input[type="text"],
@@ -100,7 +149,27 @@ select {
   box-sizing: border-box;
   padding: 18px 5px 15px 15px;
   font: inherit;
-  border: 2px solid #bdbbbc;
+  border: 2px solid #d5d5d5;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+textarea:hover,
+select:hover {
+  border-color: #bebebe;
+}
+
+input[type="text"]:active,
+input[type="text"]:focus,
+input[type="email"]:active,
+input[type="email"]:focus,
+input[type="number"]:active,
+input[type="number"]:focus,
+textarea:active,
+textarea:focus,
+select:focus {
+  border-color: #8d745a;
 }
 
 input[type="checkbox"] {
