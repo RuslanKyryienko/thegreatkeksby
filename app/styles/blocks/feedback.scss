@@ -3,10 +3,6 @@
   padding-bottom: 90px;
 }
 
-.feedback-top__section-title {
-  margin: 1px auto auto 0;
-}
-
 .feedback-top__tip {
   align-self: center;
 }
@@ -29,7 +25,6 @@
 .feedback-form__container {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   margin-bottom: 25px;
   padding-right: 4px;
   box-sizing: border-box;
@@ -44,10 +39,6 @@
   padding-right: 0;
   padding-bottom: 30px;
   border-bottom: 1px solid #bdbbbc;
-}
-
-.container-form-btn {
-  align-self: flex-start;
 }
 
 .container-message {

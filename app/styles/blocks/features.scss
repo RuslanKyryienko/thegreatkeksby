@@ -35,6 +35,16 @@
   background: rgba(64, 64, 64, 0.25) /*url("../img/icons/css_sprites.png") no-repeat*/;
 }
 
+.feature-choice {
+  background: url("../img/icons/sprite.png") -20px -324px no-repeat;
+}
+.feature-quality {
+  background: url("../img/icons/sprite.png") -20px -518px no-repeat;
+}
+.feature-safety {
+  background: url("../img/icons/sprite.png") -14px -421px no-repeat;
+}
+
 .feature-title {
   font-size: 1.87em;
   margin-bottom: 23px;

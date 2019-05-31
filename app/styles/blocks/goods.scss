@@ -3,10 +3,6 @@
   padding-bottom: 90px;
 }
 
-.goods-top__section-title {
-  margin: 1px auto auto 0;
-}
-
 .goods-container {
   width: 100%;
   display: flex;
@@ -62,7 +58,6 @@
 }
 
 .goods-bottom__section-title {
-  margin: 1px auto auto 0;
   padding-bottom: 65px;
 }
 
@@ -79,9 +74,19 @@
   padding: 15px;
 }
 
+.table-header:nth-child(2),
+.table-cell:nth-child(2) {
+  width: 39%;
+}
+
+.table-header:nth-child(3),
+.table-cell:nth-child(3) {
+  width: 33.3%;
+}
+
 .table-header:nth-child(4),
 .table-cell:nth-child(4) {
-  width: 15%;
+  width: 16.6%;
 }
 
 .table-header {
