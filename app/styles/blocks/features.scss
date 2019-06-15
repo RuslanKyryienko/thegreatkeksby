@@ -1,55 +1,58 @@
-.site-features__container {
-  padding-top: 50px;
-  padding-bottom: 90px;
+.site-features {
+  background-color: #fff;
 }
 
-.features-layer {
-  display: flex;
-  flex-direction: column;
+.site-features__inner-container {
+  padding-top: 49px;
+  padding-bottom: 54px;
 }
 
-.features-list {
+.feauture-list {
   display: flex;
   flex-direction: row;
 }
 
-.features-list__list-item {
+.feauture-list__item {
+  border-left: 1px solid #d9d9d9;
+}
+
+.feauture-list__item:first-child {
+  border-left: none;
+}
+
+.feature-list__item-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-left: 30px;
   padding-right: 30px;
-  text-align: center;
-  border-left: 1px solid rgb(217, 217, 217);
 }
 
-.features-list__list-item:first-child {
-  border-color: transparent;
-}
-
-.feature-img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+.feauture-icon {
+  display: block;
   width: 65px;
-  height: 61px;
-  background: rgba(64, 64, 64, 0.25) /*url("../img/icons/css_sprites.png") no-repeat*/;
+  height: 65px;
+  background: url("../img/icons/sprite.png") no-repeat;
 }
 
-.feature-choice {
-  background: url("../img/icons/sprite.png") -20px -324px no-repeat;
-}
-.feature-quality {
-  background: url("../img/icons/sprite.png") -20px -518px no-repeat;
-}
-.feature-safety {
-  background: url("../img/icons/sprite.png") -14px -421px no-repeat;
+.icon-choice {
+  background-position: -20px -518px;
 }
 
-.feature-title {
-  font-size: 1.87em;
-  margin-bottom: 23px;
+.icon-quality {
+  background-position: -20px -324px;
 }
 
-.feature-description {
+.icon-safety {
+  background-position: -13px -421px;
+}
+
+.feauture-title {
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+
+.feauture-description {
+  text-align: center;
   line-height: 1.5;
 }

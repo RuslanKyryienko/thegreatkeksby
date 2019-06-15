@@ -1,81 +1,66 @@
-.site-layout__header {
-  background: url("../img/backgrounds/bg-header.jpg")no-repeat;
+.site-header {
+  background: url("/img/backgrounds/bg-header.png") no-repeat;
   background-size: cover;
 }
 
-.site-header__container {
-  padding-top: 35px;
+.site-header__inner-container {
+  padding-top: 34px;
 }
 
-.header-top {
-  width: 100%;
-  padding-bottom: 0;
-  display: flex;
-  flex-direction: row;
-}
-
-.header-top__logo {
+.header-top__container-logo {
   width: 205px;
-  margin: auto;
-  margin-left: 0;
+  height: 55px;
+  margin: 0 126px 0 0;
 }
 
-.header-top__main-nav {
-  margin: 23px auto auto 25px;
+.header-top__container-navigation {
+  margin: 22px auto 0 0;
 }
 
-.header-nav {
-  display: flex;
-  flex-direction: column;
-}
-
-.header-nav__list {
+.header-nav__nav-list {
   display: flex;
   flex-direction: row;
-  font-size: 1.125em;
 }
 
 .header-nav__list-item {
-  margin: 0 25px;
+  margin-right: 50px;
 }
 
-.header-nav__list-item a {
-  padding-bottom: 5px;
+.header-nav__link {
+  padding-bottom: 3px;
+  font-family: Arial, Roboto, Tahoma, sans-serif;
   text-transform: uppercase;
-  transition: all 0.1s;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.2s;
 }
 
-.header-nav__list-item a:hover {
+.header-nav__link:hover {
   border-bottom: 2px solid #fff;
 }
 
-.header-nav__list-item a:active {
-  color: #737373;
-  border-color: #737373;
+.header-nav__link:active {
+  color: rgba(255, 255, 255, .3);
+  border-color: rgba(255, 255, 255, .3);
 }
 
-.header-top__btn {
-  margin:  7px 0 auto auto;
+.header-top__container-button {
+  margin: 5px 0 0 auto;
 }
 
-.header-middle {
-  padding-top: 122px;
-  padding-bottom: 204px;
-
-}
-
-.promo {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-
-}
-
-.promo__link {
+.header-middle__container-promo {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 117px;
+  padding-bottom: 198px;
+  text-align: center;
+}
+
+.header-promo {
   font-family: Georgia, sans-serif;
-  font-weight: bold;
-  font-size: 2.8em;
-  line-height: 1.2;
+  font-size: 2.8125em;
+  font-weight: 700;
+  line-height: 1.35;
+  color: white;
 }

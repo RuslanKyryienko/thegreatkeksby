@@ -1,41 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>The Great Keksby</title>
         <link rel="stylesheet" href="css/main.min.css">
     </head>
     <body>
         <div class="site-layout">
             <div class="site-layout__container">
-                <div class="site-layout__header flex-column-1-0-100p">
-                    <header class="site-header flex-column-1-0-100p">
+                <div class="site-layout__header">
+                    <header class="site-header">
                         <div class="site-header__container container">
                             <div class="site-header__inner-container inner-container">
                                 <div class="header-top">
-                                    <div class="header-top__logo">
-                                        <a><img src="img/logo.png" alt="logo"></a>
-                                    </div>
-                                    <div class="header-top__main-nav">
-                                        <nav class="header-nav">
-                                            <ul class="header-nav__list">
-                                                <li class="header-nav__list-item"><a>Магазин</a></li>
-                                                <li class="header-nav__list-item"><a>Каталог</a></li>
-                                                <li class="header-nav__list-item"><a>Отзывы</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <div class="header-top__btn btn-container">
-                                        <a class="btn btn-quick-order">Заказать</a>
+                                    <div class="header-top__wrapper wrapper">
+                                        <div class="header-top__container-logo">
+                                            <a class="header-logo">
+                                                <img src="img/logo.png" alt="logo">
+                                            </a>
+                                        </div>
+                                        <div class="header-top__container-navigation">
+                                            <nav class="header-nav">
+                                                <ul class="header-nav__nav-list">
+                                                    <li class="header-nav__list-item">
+                                                        <a class="header-nav__link">Магазин</a>
+                                                    </li>
+                                                    <li class="header-nav__list-item">
+                                                        <a class="header-nav__link">Каталог</a>
+                                                    </li>
+                                                    <li class="header-nav__list-item">
+                                                        <a class="header-nav__link">Отзывы</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <div class="header-top__container-button">
+                                            <button class="btn btn--quick-order" type="button">Заказать</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="header-middle">
-                                    <div class="promo">
-                                        <div class="promo__link">
-                                            <a>Аксессуары для котов<br>Коллекция FW15</a>
+                                    <div class="header-middle__wrapper wrapper">
+                                        <div class="header-middle__container-promo">
+                                            <a class="header-promo">
+                                                Аксессуары для котов<br>
+                                                Коллекция FW15
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -43,354 +53,469 @@
                         </div>
                     </header>
                 </div>
-                <main class="site-layout__main">
-                    <div class="site-layout__features flex-column-1-0-100p">
-                        <section class="site-features flex-column-1-0-100p">
-                            <div class="site-features__container container">
-                                <div class="site-features__inner-container inner-container">
-                                    <div class="features-layer">
-                                        <ul class="features-list">
-                                            <li class="features-list__list-item">
-                                                <div class="feature-img feature-choice"></div>
-                                                <h2 class="feature-title list-title">Выбор</h2>
-                                                <p class="feature-description">
-                                                    Ваш питомец оценит широту нашего ассортимента аксессуаров.
-                                                </p>
-                                            </li>
-                                            <li class="features-list__list-item">
-                                                <div class="feature-img feature-quality"></div>
-                                                <h2 class="feature-title list-title">Качество</h2>
-                                                <p class="feature-description">
-                                                    Наши товары не сломаются на второй день. Только на третий.
-                                                </p>
-                                            </li>
-                                            <li class="features-list__list-item">
-                                                <div class="feature-img feature-safety"></div>
-                                                <h2 class="feature-title list-title">Безопасность</h2>
-                                                <p class="feature-description">
-                                                    Все изготовлено из натуральных материалов, безопасных для котов.
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="site-layout__cat-reference flex-column-1-0-100p">
-                        <section class="site-cat-reference flex-column-1-0-100p">
-                            <div class="site-cat-reference__container container">
-                                <div class="site-cat-reference__inner-container inner-container">
-                                    <div class="cat-reference-top">
-                                        <div class="cat-reference-top__section-title">
-                                            <h2 class="section-title">Немного теории</h2>
-                                        </div>
-                                        <div class="btn-container">
-                                            <a class="btn">Справочник</a>
-                                        </div>
-                                    </div>
-                                    <div class="cat-reference-middle">
-                                        <article class="cat-reference-article">
-                                            <dl class="site-cat-reference__definition-list">
-                                                <dt class="site-cat-reference__definition-term">
-                                                    Окрас кошек и котов <span>источник: </span><a class="definition-term__link">wikipedia</a>
-                                                </dt>
-                                                <dd class="site-cat-reference__definition-description">
-                                                    <div class="article-img article-img-1"></div>
-                                                    <div class="article-part">
-                                                        <p class="article-text">
-                                                            Окрас шерсти, кожи и глаз кошки обусловлен присутствием в них пигмента меланина.
-                                                            Меланин находится в теле волоса в виде микроскопических
-                                                            гранул, которые различаются по форме,размеру и количеству, что и вызывает
-                                                            различия в окрасе.
-                                                        </p>
-                                                    </div>
-                                                </dd>
-                                            </dl>
-                                        </article>
-                                        <article class="cat-reference-article">
-                                            <dl class="site-cat-reference__definition-list">
-                                                <dt class="site-cat-reference__definition-term">
-                                                    Кошкин дом <span>источник: </span><a class="definition-term__link">kotmurr.spb.ru</a>
-                                                </dt>
-                                                <dd class="site-cat-reference__definition-description">
-                                                    <div class="article-img article-img-2"></div>
-                                                    <div class="article-part">
-                                                        <p class="article-text">
-                                                            Нужен ли кошке Кошкин дом? Свой отдельный, обособленный от пространства
-                                                            городской квартиры Кошкин дом? Да, нужен! Нужен особый Кошкин дом, обустроенный
-                                                            по ее вкусу с лесенкой, с когтеточкой, с замкнутым, своим, отдельным уголком в
-                                                            ее, кошкином, доме.
-                                                        </p>
-                                                    </div>
-                                                </dd>
-                                            </dl>
-                                        </article>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="site-layout__reviews flex-column-1-0-100p">
-                        <section class="site-reviews flex-column-1-0-100p">
-                            <div class="site-reviews__container container">
-                                <div class="site-reviews__inner-container inner-container">
-                                    <div class="reviews-top">
-                                        <div class="reviews-top__section-title">
-                                            <h2 class="section-title">Довольные коты</h2>
-                                        </div>
-                                        <div class="btn-container">
-                                            <a class="btn">Все отзывы</a>
-                                        </div>
-                                    </div>
-                                    <div class="reviews-middle">
-                                        <div class="reviews__reviews-list">
-                                            <blockquote class="reviews-list__item">
-                                                <p class="review-text">
-                                                    Спасибо Кексу за давно напрашивающуюся идею! Набрал себе очков на все случаи жизни:
-                                                    для чтения и для вечеринки с котанами B-)
-                                                </p>
-                                                <cite class="review-author">Барсик, г. Москва</cite>
-                                            </blockquote>
-                                            <blockquote class="reviews-list__item">
-                                                <p class="review-text">
-                                                    Я просто не могу без шоппинга и теперь не нужно тащить хозяйку в магазин, заказываю все
-                                                    аксессуары на сайте у Кекса он-лайн!
-                                                </p>
-                                                <cite class="review-author">Мурка, г. Санкт-Петербург</cite>
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="site-layout__goods flex-column-1-0-100p">
-                        <section class="site-goods flex-column-1-0-100p">
-                            <div class="site-goods__container container">
-                                <div class="site-goods__inner-container inner-container">
-                                    <div class="goods-top">
-                                        <div class="goods-top__section-title">
-                                            <h2 class="section-title">Популярные товары</h2>
-                                        </div>
-                                        <div class="btn-container">
-                                            <a class="btn">Каталог</a>
-                                        </div>
-                                    </div>
-                                    <div class="goods-middle">
-                                        <div class="goods-container">
-                                            <ul class="goods-list">
-                                                <li class="goods-list__good-card">
-                                                    <div class="good-card-img">
-                                                        <img src="img/classic.jpg" alt="classic">
-                                                    </div>
-                                                    <div class="good-card-name-and-price">
-                                                        <b class="good-card-name">Очки &laquo;Классика жанра&raquo;</b>
-                                                        <b class="good-card-price">300 р.</b>
-                                                    </div>
-                                                    <div class="good-card-btns">
-                                                        <div class="btn-goodcard-container">
-                                                            <button type="button" class="btn btn-brown btn-brown-card">Описание</button>
-                                                        </div>
-                                                        <div class="btn-goodcard-container">
-                                                            <button type="button" class="btn btn-brown btn-brown-card">Купить</button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="goods-list__good-card">
-                                                    <div class="good-card-img">
-                                                        <img src="img/jalousie.jpg" alt="jalousie">
-                                                    </div>
-                                                    <div class="good-card-name-and-price">
-                                                        <b class="good-card-name">Очки &laquo;Жалюзи&raquo;</b>
-                                                        <b class="good-card-price">400 р.</b>
-                                                    </div>
-                                                    <div class="good-card-btns">
-                                                        <div class="btn-goodcard-container">
-                                                            <button type="button" class="btn btn-brown btn-brown-card">Описание</button>
-                                                        </div>
-                                                        <div class="btn-goodcard-container">
-                                                            <button type="button" class="btn btn-brown btn-brown-card">Купить</button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="goods-list__good-card">
-                                                    <div class="good-card-img">
-                                                        <img src="img/basillio.jpg" alt="basilio">
-                                                    </div>
-                                                    <div class="good-card-name-and-price">
-                                                        <b class="good-card-name">Очки &laquo;Базилио&raquo;</b>
-                                                        <b class="good-card-price">500 р.</b>
-                                                    </div>
-                                                    <div class="good-card-btns">
-                                                        <div class="btn-goodcard-container">
-                                                            <button type="button" class="btn btn-brown btn-brown-card">Описание</button>
-                                                        </div>
-                                                        <div class="btn-goodcard-container">
-                                                            <button type="button" class="btn btn-brown btn-brown-card">Купить</button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="goods-bottom">
-                                        <div class="goods-bottom__section-title">
-                                            <h2 class="section-title">Прайс-лист на услуги</h2>
-                                        </div>
-                                        <div class="price-list-container">
-                                            <table class="price-list-table">
-                                                <tr class="table-row">
-                                                    <th class="table-header">№</th>
-                                                    <th class="table-header">Название услуги</th>
-                                                    <th class="table-header">Кто оказывает</th>
-                                                    <th class="table-header">Сколько стоит</th>
-                                                </tr>
-                                                <tr class="table-row">
-                                                    <td class="table-cell">1.</td>
-                                                    <td class="table-cell">Стрижка</td>
-                                                    <td class="table-cell">Грумер</td>
-                                                    <td class="table-cell">500 руб.</td>
-                                                </tr>
-                                                <tr class="table-row">
-                                                    <td class="table-cell">2.</td>
-                                                    <td class="table-cell">Заточка когтей</td>
-                                                    <td class="table-cell">Грумер</td>
-                                                    <td class="table-cell">300 руб.</td>
-                                                </tr>
-                                                <tr class="table-row">
-                                                    <td class="table-cell">3.</td>
-                                                    <td class="table-cell">Накрутка усов</td>
-                                                    <td class="table-cell">Грумер</td>
-                                                    <td class="table-cell">100 руб.</td>
-                                                </tr>
-                                                <tr class="table-row">
-                                                    <td class="table-cell">4.</td>
-                                                    <td class="table-cell">Подбор аксессуаров</td>
-                                                    <td class="table-cell">Стилист</td>
-                                                    <td class="table-cell">1500 руб.</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="site-layout__feedback flex-column-1-0-100p">
-                        <section class="site-feedback flex-column-1-0-100p">
-                            <div class="site-feedback__container container">
-                                <div class="site-feedback__inner-container inner-container">
-                                    <div class="feedback-top">
-                                        <div class="feedback-top__section-title">
-                                            <h2 class="section-title">Остались вопросы?</h2>
-                                        </div>
-                                        <div class="feedback-top__tip">
-                                            <p>Свяжитесь с нами, и мы развеем оставшиеся у вас сомнения!</p>
-                                        </div>
-                                    </div>
-                                    <div class="feedback-middle">
-                                        <div class="feedback-layer">
-                                            <form class="feedback-form" action="#" method="post">
-                                                <div class="feedback-form__container container-name">
-                                                    <label for="name">Представьтесь, пожалуйста:</label>
-                                                    <input type="text" name="name" id="name" placeholder="Имя &laquo;Прозвище&raquo; Фамилия"
-                                                           required>
+                <div class="site-layout__main">
+                    <main class="site-main">
+                        <div class="site-layout__features">
+                            <section class="site-features">
+                                <div class="site-features__container container">
+                                    <div class="site-features__inner-container inner-container">
+                                        <div class="features-top">
+                                            <div class="features-top__wrapper wrapper">
+                                                <div class="features-top__container-features-list">
+                                                    <ul class="feauture-list">
+                                                        <li class="feauture-list__item">
+                                                            <div class="feature-list__item-content">
+                                                                <i class="feauture-icon icon-choice"></i>
+                                                                <h2 class="feauture-title">Выбор</h2>
+                                                                <p class="feauture-description">
+                                                                    Ваш питомец оценит широту нашего
+                                                                    ассортимента аксессуаров.
+                                                                </p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="feauture-list__item">
+                                                            <div class="feature-list__item-content">
+                                                                <i class="feauture-icon icon-quality"></i>
+                                                                <h2 class="feauture-title">Качество</h2>
+                                                                <p class="feauture-description">
+                                                                    Наши товары не сломаются на
+                                                                    второй день. Только на третий.
+                                                                </p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="feauture-list__item">
+                                                            <div class="feature-list__item-content">
+                                                                <i class="feauture-icon icon-safety"></i>
+                                                                <h2 class="feauture-title">Безопасность</h2>
+                                                                <p class="feauture-description">
+                                                                    Все изготовлено из натуральных
+                                                                    материалов, безопасных для котов.
+                                                                </p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
                                                 </div>
-                                                <div class="feedback-form__container container-contacts">
-                                                    <div class="inner-group">
-                                                        <div class="feedback-phone">
-                                                            <label for="phone">Контактный телефон:</label>
-                                                            <input class="input-phone" type="number" name="phone" id="phone" placeholder="8 (XXX) XXX-XX-XX"
-                                                                   required>
-                                                        </div>
-                                                        <div class="feedback-email">
-                                                            <label for="email">Электронная почта:</label>
-                                                            <input class="input-email" type="email" name="email" id="email" placeholder="E-mail" required>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="feedback-form__container container-subscribe">
-                                                    <label class="subscribe-label">
-                                                        <input type="checkbox" name="subscribe" id="subscribe" checked>
-                                                        <span class="fake"></span>
-                                                        <span class="subscribe-label__text">Я согласен получать спам и смс на телефон</span>
-                                                    </label>
-                                                </div>
-                                                <div class="feedback-form__container container-subject">
-                                                    <label for="subject">Тема обращения:</label>
-                                                    <select name="subject" id="subject">
-                                                        <option value="delivery-terms">Условия доставки</option>
-                                                        <option value="purchase-returns">Возврат товара</option>
-                                                        <option value="complaint">Жалоба в Роспотребнадзор</option>
-                                                    </select>
-                                                </div>
-                                                <div class="feedback-form__container container-message">
-                                                    <label for="message">Текст обращения:</label>
-                                                    <textarea name="message" id="message" cols="10" rows="5" placeholder="Введите текст вашего обращения"></textarea>
-                                                </div>
-                                                <div class="feedback-form__container btn-brown-container">
-                                                    <button type="submit" class="btn btn-brown">Отправить</button>
-                                                </div>
-                                            </form>
-                                            <div class="form-img">
-                                                <div class="feedback-form__img"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </section>
-                    </div>
-                </main>
-                <div class="site-layout__footer flex-column-1-0-100p">
-                    <footer class="site-footer flex-column-1-0-100p">
+                            </section>
+                        </div>
+                        <div class="site-layout__cat-reference">
+                            <section class="site-cat-reference">
+                                <div class="site-cat-reference__container container">
+                                    <div class="site-cat-reference__inner-container inner-container">
+                                        <div class="cat-reference-top">
+                                            <div class="cat-reference-top__wrapper wrapper">
+                                                <div class="cat-reference-top__container-title">
+                                                    <h2 class="section-title">Немного теории</h2>
+                                                </div>
+                                                <div class="cat-reference-top__container-button">
+                                                    <button class="btn" type="button">Справочник</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cat-reference-middle">
+                                            <div class="cat-reference-middle__wrapper wrapper">
+                                                <div class="cat-reference-middle__container-article">
+                                                    <article class="cat-reference-article">
+                                                        <div class="cat-reference-article__content">
+                                                            <dl class="cat-reference__definition-list">
+                                                                <dt class="cat-reference__definition-term">
+                                                                    <b class="definition-term-text--bold">Окрас кошек и котов</b>
+                                                                    <i class="definition-term-text--italic">источник:</i>
+                                                                    <a class="cat-reference__link">wikipedia</a>
+                                                                </dt>
+                                                                <dd class="cat-reference__definition-description">
+                                                                    <div class="article-image image-cat-colors"></div>
+                                                                    <p class="article-text">
+                                                                        Окрас шерсти, кожи и глаз кошки обусловлен присутствием
+                                                                        в них пигмента меланина. Меланин находится в теле волоса
+                                                                        в виде микроскопических гранул, которые различаются по форме,
+                                                                        размеру и количеству, что и вызывает различия в окрасе.
+                                                                    </p>
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                                <div class="cat-reference-middle__container-article">
+                                                    <article class="cat-reference-article">
+                                                        <div class="cat-reference-article__content">
+                                                            <dl class="cat-reference__definition-list">
+                                                                <dt class="cat-reference__definition-term">
+                                                                    <b class="definition-term-text--bold">Кошкин дом</b>
+                                                                    <i class="definition-term-text--italic">источник:</i>
+                                                                    <a class="cat-reference__link">kotmurr.spb.ru</a>
+                                                                </dt>
+                                                                <dd class="cat-reference__definition-description">
+                                                                    <div class="article-image image-cat-house"></div>
+                                                                    <p class="article-text">
+                                                                        Нужен ли кошке Кошкин дом? Свой отдельный, обособленный
+                                                                        от пространства городской квартиры Кошкин дом? Да, нужен!
+                                                                        Нужен особый Кошкин дом, обустроенный по ее вкусу с лесенкой,
+                                                                        с когтеточкой, с замкнутым, своим, отдельным уголком в ее,
+                                                                        кошкином, доме.
+                                                                    </p>
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="site-layout__reviews">
+                            <section class="site-reviews">
+                                <div class="site-reviews__container container">
+                                    <div class="site-reviews__inner-container inner-container">
+                                        <div class="reviews-top">
+                                            <div class="reviews-top__wrapper wrapper">
+                                                <div class="reviews-top__container-title">
+                                                    <h2 class="section-title">Довольные коты</h2>
+                                                </div>
+                                                <div class="reviews-top__container-button">
+                                                    <button class="btn" type="button">Все отзывы</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews-middle">
+                                            <div class="reviews-middle__wrapper wrapper">
+                                                <div class="reviews-middle__container-review">
+                                                    <blockquote class="blockquote">
+                                                        <div class="blockquote__wrapper">
+                                                            <p class="review-text">
+                                                                Спасибо Кексу за давно напрашивающуюся идею!
+                                                                Набрал себе очков на все случаи жизни:
+                                                                для чтения и для вечеринки с котанами B-)
+                                                            </p>
+                                                            <cite class="review-author">Барсик, г. Москва</cite>
+                                                        </div>
+                                                    </blockquote>
+                                                </div>
+                                                <div class="reviews-middle__container-review">
+                                                    <blockquote class="blockquote">
+                                                        <div class="blockquote__wrapper">
+                                                            <p class="review-text">
+                                                                Я просто не могу без шоппинга и теперь не
+                                                                нужно тащить хозяйку в магазин, заказываю
+                                                                все аксессуары на сайте у Кекса он-лайн!
+                                                            </p>
+                                                            <cite class="review-author">Мурка, г. Санкт-Петербург</cite>
+                                                        </div>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="site-layout__goods">
+                            <section class="site-goods">
+                                <div class="site-goods__container container">
+                                    <div class="site-goods__inner-container inner-container">
+                                        <div class="goods-top">
+                                            <div class="goods-top__wrapper wrapper">
+                                                <div class="goods-top__container-title">
+                                                    <h2 class="section-title">Популярные товары</h2>
+                                                </div>
+                                                <div class="goods-top__container-button">
+                                                    <button class="btn" type="button">Каталог</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="goods-middle">
+                                            <div class="goods-middle__wrapper wrapper">
+                                                <div class="goods-middle__container-short-catalog">
+                                                    <ul class="short-catalog">
+                                                        <li class="short-catalog__item">
+                                                            <div class="short-catalog__item-content">
+                                                                <div class="good-image">
+                                                                    <img src="img/classic.jpg" alt="classic">
+                                                                </div>
+                                                                <div class="good-info">
+                                                                    <div class="good-name-and-price">
+                                                                    <span class="good-name">
+                                                                        Очки &laquo;Классика жанра&raquo;
+                                                                    </span>
+                                                                        <span class="good-price">300 р.</span>
+                                                                    </div>
+                                                                    <div class="good-buttons">
+                                                                        <button class="btn btn_brown btn-good"
+                                                                                type="button">Описание</button>
+                                                                        <button class="btn btn_brown btn-good"
+                                                                                type="button">Купить</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="short-catalog__item">
+                                                            <div class="short-catalog__item-content">
+                                                                <div class="good-image">
+                                                                    <img src="img/jalousie.jpg" alt="classic">
+                                                                </div>
+                                                                <div class="good-info">
+                                                                    <div class="good-name-and-price">
+                                                                    <span class="good-name">
+                                                                        Очки &laquo;Жалюзи&raquo;
+                                                                    </span>
+                                                                        <span class="good-price">400 р.</span>
+                                                                    </div>
+                                                                    <div class="good-buttons">
+                                                                        <button class="btn btn_brown btn-good"
+                                                                                type="button">Описание</button>
+                                                                        <button class="btn btn_brown btn-good"
+                                                                                type="button">Купить</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="short-catalog__item">
+                                                            <div class="short-catalog__item-content">
+                                                                <div class="good-image">
+                                                                    <img src="img/basillio.jpg" alt="classic">
+                                                                </div>
+                                                                <div class="good-info">
+                                                                    <div class="good-name-and-price">
+                                                                    <span class="good-name">
+                                                                        Очки &laquo;Базилио&raquo;
+                                                                    </span>
+                                                                        <span class="good-price">500 р.</span>
+                                                                    </div>
+                                                                    <div class="good-buttons">
+                                                                        <button class="btn btn_brown btn-good"
+                                                                                type="button">Описание</button>
+                                                                        <button class="btn btn_brown btn-good"
+                                                                                type="button">Купить</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="goods-bottom">
+                                            <div class="site-layout__services">
+                                                <section class="site-services">
+                                                    <div class="site-services__container">
+                                                        <div class="site-services__inner-container">
+                                                            <div class="services-top">
+                                                                <div class="services-top__wrapper wrapper">
+                                                                    <div class="services-top__container-title">
+                                                                        <h2 class="section-title">Прайс-лист на услуги</h2>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="services-middle">
+                                                                    <div class="services-middle__wrapper wrapper">
+                                                                        <div class="services-middle__container-table">
+                                                                            <table class="services-table">
+                                                                                <tr class="table-row t-row-0">
+                                                                                    <th class="table-header t-header-0">№</th>
+                                                                                    <th class="table-header t-header-1">Название услуги</th>
+                                                                                    <th class="table-header t-header-2">Кто оказывает</th>
+                                                                                    <th class="table-header t-header-3">Сколько стоит</th>
+                                                                                </tr>
+                                                                                <tr class="table-row t-row-1">
+                                                                                    <td class="table-cell t-cell-0">1.</td>
+                                                                                    <td class="table-cell t-cell-1">Стрижка</td>
+                                                                                    <td class="table-cell t-cell-2">Груммер</td>
+                                                                                    <td class="table-cell t-cell-3">500 руб.</td>
+                                                                                </tr>
+                                                                                <tr class="table-row t-row-2">
+                                                                                    <td class="table-cell t-cell-0">2.</td>
+                                                                                    <td class="table-cell t-cell-1">Заточка когтей</td>
+                                                                                    <td class="table-cell t-cell-2">Груммер</td>
+                                                                                    <td class="table-cell t-cell-3">300 руб.</td>
+                                                                                </tr>
+                                                                                <tr class="table-row t-row-3">
+                                                                                    <td class="table-cell t-cell-0">3.</td>
+                                                                                    <td class="table-cell t-cell-1">Накрутка усов</td>
+                                                                                    <td class="table-cell t-cell-2">Груммер</td>
+                                                                                    <td class="table-cell t-cell-3">100 руб.</td>
+                                                                                </tr>
+                                                                                <tr class="table-row t-row-4">
+                                                                                    <td class="table-cell t-cell-0">4.</td>
+                                                                                    <td class="table-cell t-cell-1">Подбор аксессуаров</td>
+                                                                                    <td class="table-cell t-cell-2">Стилист</td>
+                                                                                    <td class="table-cell t-cell-3">1500 руб.</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="site-layout__feedback">
+                            <section class="site-feedback">
+                                <div class="site-feedback__container container">
+                                    <div class="site-feedback__inner-container inner-container">
+                                        <div class="feedback-top">
+                                            <div class="feedback-top__wrapper wrapper">
+                                                <div class="feedback-top__container-title">
+                                                    <h2 class="section-title">Остались вопросы?</h2>
+                                                </div>
+                                                <div class="feedback-top__container-tip">
+                                                    <p class="feedback-tip">
+                                                        Свяжитесь с нами, и мы развеем
+                                                        оставшиеся у вас сомнения!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="feedback-middle">
+                                            <div class="feedback-middle__wrapper wrapper">
+                                                <form class="feedback-form" action="#" method="post">
+                                                    <div class="feedback-form__form-group">
+                                                        <label class="feedback-form__label" for="user-name">
+                                                            Представьтесь, пожалуйста:
+                                                        </label>
+                                                        <input class="feedback-form__input" type="text" name="user-name"
+                                                               id="user-name" placeholder="Имя &laquo;Прозвище&raquo; Фамилия" required>
+                                                    </div>
+                                                    <div class="feedback-form__form-group form-group-row">
+                                                        <div class="feedback-form__form-group">
+                                                            <label class="feedback-form__label" for="user-phone">
+                                                                Контактный телефон:
+                                                            </label>
+                                                            <input class="feedback-form__input" type="text" name="user-phone"
+                                                                   id="user-phone" placeholder="8 (XXX) XXX-XX-XX" required>
+                                                        </div>
+                                                        <div class="feedback-form__form-group form-group-email">
+                                                            <label class="feedback-form__label" for="user-email">
+                                                                Электронная почта:
+                                                            </label>
+                                                            <input class="feedback-form__input input-email" type="email" name="user-email"
+                                                                   id="user-email" placeholder="E-mail" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-form__form-group form-group-checkbox">
+                                                        <label class="checkbox-label">
+                                                            <input class="feedback-form__checkbox" type="checkbox" name="subscription" checked>
+                                                            <span class="checkbox-container"></span>
+                                                            <span class="checkbox-label-text">Я согласен получать спам и смс на телефон</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="feedback-form__form-group form-group-select">
+                                                        <label class="feedback-form__label" for="subject">
+                                                            Тема обращения:
+                                                        </label>
+                                                        <select class="feedback-form__select" name="subject" id="subject">
+                                                            <option class="feedback-form__option" value="delivery">
+                                                                Условия доставки
+                                                            </option>
+                                                            <option class="feedback-form__option" value="refund">
+                                                                Возврат товара
+                                                            </option>
+                                                            <option class="feedback-form__option" value="сomplaint">
+                                                                Жалоба в Роспотребнадзор
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="feedback-form__form-group">
+                                                        <label class="feedback-form__label" for="message">
+                                                            Текст обращения:
+                                                        </label>
+                                                        <textarea class="feedback-form__textarea" name="message"
+                                                                  id="message" cols="30" rows="5" placeholder="Введите текст вашего обращения"></textarea>
+                                                    </div>
+                                                    <div class="feedback-form__form-group form-group-button">
+                                                        <button class="feedback-form__btn btn btn_brown">
+                                                            Отправить
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                                <div class="feedback-middle__image"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </main>
+                </div>
+                <div class="site-layout__footer">
+                    <footer class="site-footer">
                         <div class="site-footer__container container">
                             <div class="site-footer__inner-container inner-container">
                                 <div class="footer-top">
-                                    <div class="footer-top__logo">
-                                        <a href="#">
-                                            <img src="img/logo.png" alt="logo">
-                                        </a>
-                                    </div>
-                                    <div class="btn-container footer-top__btn">
-                                        <a class="btn btn-quick-order">Заказать</a>
+                                    <div class="footer-top__wrapper wrapper">
+                                        <div class="footer-top__container-logo">
+                                            <a class="footer-logo">
+                                                <img src="img/logo.png" alt="logo">
+                                            </a>
+                                        </div>
+                                        <div class="footer-top__container-button">
+                                            <button class="btn btn--quick-order">Заказать</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="footer-middle">
-                                    <div class="footer-middle__nav">
-                                        <nav class="footer-nav">
-                                            <ul class="footer-nav__list shop-list">
-                                                <h3 class="list-title">Магазин</h3>
-                                                <li><a>Домики</a></li>
-                                                <li><a>Одежда</a></li>
-                                                <li><a>Очки</a></li>
-                                            </ul>
-                                            <ul class="footer-nav__list reviews-list">
-                                                <h3 class="list-title">Отзывы</h3>
-                                                <li><a>Показать</a></li>
-                                                <li><a>Оставить</a></li>
-                                            </ul>
-                                            <ul class="footer-nav__list price-list">
-                                                <h3 class="list-title">Прайс-лист</h3>
-                                                <li><a>Скачать прайс</a></li>
-                                            </ul>
-                                        </nav>
+                                    <div class="footer-middle__wrapper wrapper">
+                                        <div class="footer-middle__container-navigation">
+                                            <nav class="footer-nav">
+                                                <ul class="footer-nav__nav-list">
+                                                    <h3 class="footer-nav__nav-title">Магазин</h3>
+                                                    <li class="footer-nav__list-item">
+                                                        <a class="footer-nav__link">Домики</a>
+                                                    </li>
+                                                    <li class="footer-nav__list-item">
+                                                        <a class="footer-nav__link">Одежда</a>
+                                                    </li>
+                                                    <li class="footer-nav__list-item">
+                                                        <a class="footer-nav__link">Очки</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <div class="footer-middle__container-navigation">
+                                            <nav class="footer-nav">
+                                                <ul class="footer-nav__nav-list">
+                                                    <h3 class="footer-nav__nav-title">Отзывы</h3>
+                                                    <li class="footer-nav__list-item">
+                                                        <a class="footer-nav__link">Показать</a>
+                                                    </li>
+                                                    <li class="footer-nav__list-item">
+                                                        <a class="footer-nav__link">Оставить</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <div class="footer-middle__container-navigation">
+                                            <nav class="footer-nav">
+                                                <ul class="footer-nav__nav-list">
+                                                    <h3 class="footer-nav__nav-title">Прайс-лист</h3>
+                                                    <li class="footer-nav__list-item">
+                                                        <a class="footer-nav__link">Скачать прайс</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="footer-bottom">
-                                    <div class="footer-bottom__socials-and-copywright">
-                                        <div class="lets-be-friends">
-                                            <b class="footer-bold-text">Давайте дружить!</b>
-                                        </div>
-                                        <div class="socials-btns">
-                                            <a class="social-btn social-vkontakte"></a>
-                                            <a class="social-btn social-facebook"></a>
-                                            <a class="social-btn social-instaram"></a>
-                                        </div>
-                                        <div class="social-copywright">
-                                            <p class="social-copywright_phrase">С <i class="heart">любовью</i> для
-                                                <a>HTML Academy</a>
+                                    <div class="footer-bottom__wrapper wrapper">
+                                        <div class="footer-bottom__container-socials-and-copywright">
+                                            <span class="footer-bottom__tip">Давайте дружить!</span>
+                                            <div class="socials">
+                                                <div class="social__btn social-btn-vkontakte"></div>
+                                                <div class="social__btn social-btn-facebook"></div>
+                                                <div class="social__btn social-btn-instagram"></div>
+                                            </div>
+                                            <p class="copywright">С <i class="copywright__heart"></i> для
+                                                <a class="copywright__link">Html Academy</a>
                                             </p>
                                         </div>
                                     </div>

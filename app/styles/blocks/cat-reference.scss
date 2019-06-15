@@ -1,62 +1,102 @@
-.site-cat-reference__container {
-  padding-top: 75px;
-  padding-bottom: 20px;
+.site-cat-reference {
+  background-color: #f2f2f2;
 }
 
-.site-cat-reference__definition-term {
-  margin-bottom: 13px;
+.site-cat-reference__inner-container {
+  padding-top: 75px;
+  padding-bottom: 90px;
+}
+
+.cat-reference-top__wrapper {
+  padding-bottom: 62px;
+
+}
+
+.cat-reference-top__container-title {
+  margin: 0 auto 0 0;
+}
+
+.section-title {
+  margin-top: 2px;
+}
+
+.cat-reference-top__container-button {
+  margin: 0 0 0 auto;
+}
+
+.cat-reference-middle__wrapper {
+  flex-direction: column;
+}
+
+.cat-reference-middle__container-article + .cat-reference-middle__container-article {
+  margin-top: 70px;
+}
+
+.cat-reference__definition-term {
+  margin-bottom: 18px;
+}
+
+.definition-term-text--bold {
   font-size: 1.5em;
   font-weight: 700;
   color: #000;
 }
 
-.site-cat-reference__definition-term span,
-.site-cat-reference__definition-term a {
-  font-size: 0.66em;
+.definition-term-text--italic {
+  color: #727272;
+}
+
+.cat-reference__link {
+  position: relative;
+  padding-bottom: 1px;
   font-style: italic;
-  font-weight: 400;
+  color: #aa947c;
+  border-bottom: 2px solid #aa947c;
 }
 
-.site-cat-reference__definition-term span {
-  color: #666;
+.cat-reference__link:after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  top: -5%;
+  left: 103%;
+  background: url("../img/icons/sprite.png") -20px -20px no-repeat;
 }
 
-.site-cat-reference__definition-term a {
+.cat-reference__link:hover {
   color: #8d745a;
-  text-decoration: underline;
+  border-color: #8d745a;
 }
 
-.site-cat-reference__definition-description {
+.cat-reference__link:active {
+  color: rgba(141, 116, 90, .3);
+  border-color: rgba(141, 116, 90, .3);
+}
+
+.cat-reference__definition-description {
   display: flex;
   flex-direction: row;
-
 }
 
-.cat-reference-article {
-  margin-bottom: 70px;
-}
-
-.article-img {
-  max-width: 100px;
+.article-image {
   width: 100%;
-  margin-right: 30px;
+  max-width: 100px;
   height: 100px;
+  margin-right: 31px;
   border-radius: 5px;
+  background-color: #c3c3c3;
 }
 
-.article-img-1 {
-  background: url("../img/article-1.jpg") no-repeat;
+.image-cat-colors {
+  background: url("../img/article-1.jpg");
 }
 
-.article-img-2 {
-  background: url("../img/article-2.jpg") no-repeat;
-}
-
-.article-part {
-  width: 70%;
-  margin-top: 5px;
+.image-cat-house {
+  background: url("../img/article-2.jpg");
 }
 
 .article-text {
+  width: 68%;
   line-height: 1.5;
 }

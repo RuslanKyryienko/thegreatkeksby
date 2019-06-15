@@ -1,148 +1,131 @@
-.site-layout__footer {
-  background: #363636;
-}
-
-.footer-top {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.footer-top__logo {
-  width: 205px;
-}
-
-.footer-middle {
-  padding-top: 50px;
-  padding-bottom: 70px;
-  border: 1px solid #5e5e5e;
-  border-left: none;
-  border-right: none;
-}
-
-.footer-middle__nav {
-  display: flex;
-  flex-direction: row;
-  color: #c3c3c3;
-}
-
-.footer-nav {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  margin-left: 0;
-}
-
-.footer-nav__list {
-  margin-right: 55px;
-}
-
-.footer-nav__list li {
-  padding-top: 25px;
-}
-
-.footer-nav__list li a {
-  transition: all 0.1s;
-}
-
-.footer-nav__list li a:hover {
+.site-footer {
+  background-color: #363636;
   color: #fff;
 }
 
-.footer-nav__list li a:active {
-  color: #747474;
+.site-footer__inner-container {
+  padding-top: 43px;
 }
 
-.footer-bottom {
+.footer-top__wrapper {
+  padding-bottom: 44px;
+}
+
+.footer-top__container-logo {
+  width: 205px;
+  height: 55px;
+  margin: 0 126px 0 0;
+}
+
+.footer-top__container-button {
+  margin: 5px 0 0 auto;
+}
+
+.footer-middle {
+  border-top: 1px solid #5e5e5e;
+  border-bottom: 1px solid #5e5e5e;
+}
+
+.footer-middle__wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  padding-bottom: 69px;
+}
+
+.footer-middle__container-navigation {
+  margin-right: 59px;
+}
+
+.footer-nav__list-item {
+  margin-top: 27px;
+}
+
+.footer-nav__link {
+  color: #c3c3c3;
+  transition: all 0.2s;
+}
+
+.footer-nav__link:hover {
+  color: #fff;
+}
+
+.footer-bottom__container-socials-and-copywright {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.footer-bottom__socials-and-copywright {
-  width: 100%;
+.footer-bottom__tip {
+  margin: 10px 40px auto 0;
+}
+
+.socials {
   display: flex;
   flex-direction: row;
 }
 
-.socials-btns {
-  display: flex;
-  flex-direction: row;
-}
-
-.social-btn {
+.social__btn,
+.copywright__heart {
   width: 60px;
   height: 60px;
-  margin-right: 11px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(64, 64, 64, 0.25);
-  transition: all 0.1s;
+  margin-right: 10px;
+  border: 1px solid rgba(255, 255, 255, .1);
+  background: url("../img/icons/sprite.png") no-repeat;
+  transition: all 0.2s;
 }
 
-.social-vkontakte {
-  background: url("../img/icons/sprite.png") 3px -49px no-repeat;
+.social__btn:last-child {
+  margin-right: 0;
 }
 
-.social-facebook {
-  background: url("../img/icons/sprite.png") 5px -242px no-repeat;
+.social__btn:hover {
+  border-color: rgba(255, 255, 255, .3);
 }
 
-.social-instaram {
-  background: url("../img/icons/sprite.png") -2px -176px no-repeat;
+.social__btn:active {
+  border-color: rgba(255, 255, 255, .1);
 }
 
-.social-btn:hover {
-  border-color: rgba(255, 255, 255, 0.3);
+.social-btn-vkontakte {
+  background-position: 2px -48px ;
 }
 
-.social-btn:active {
-  border-color: rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.0001);
+.social-btn-facebook {
+  background-position: 5px -241px;
 }
 
-.social-copywright {
+.social-btn-instagram {
+  background-position: -1px -174px;
+}
+
+.copywright {
+  margin: 20px 0 auto auto;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
-.lets-be-friends,
-.socials-btns,
-.social-copywright {
-  margin: auto;
-  margin-top: 0;
-}
-
-.lets-be-friends {
-  margin-top: 11px;
-  margin-right: 40px;
-}
-
-.lets-be-friends,
-.socials-btns {
-  margin-left: 0;
-}
-
-.social-copywright {
-  margin-top: 16px;
-  margin-right: 0;
-  word-spacing: 1px;
-}
-
-.social-copywright a {
-  padding-bottom: 5px;
-  transition: all 0.1s;
-}
-
-.social-copywright a:hover {
-  border-bottom: 2px solid #a38b70;
-}
-
-.social-copywright a:active {
-  color: #868686;
-}
-
-.heart {
+.copywright__heart {
   display: inline-block;
-  vertical-align: middle;
-  font-size: 0;
   width: 27px;
   height: 24px;
-  background: url("../img/icons/sprite.png") -20px -129px no-repeat;
+  margin: 0;
+  vertical-align: middle;
+  background-position: -20px -129px;
+  border: none;
+}
+
+.copywright__link {
+  transition: all 0.2s;
+}
+
+.copywright__link:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #a38b71;
+}
+
+.copywright__link:active {
+  color: rgba(255, 255, 255, .3);
 }

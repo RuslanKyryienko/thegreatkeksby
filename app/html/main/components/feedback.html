@@ -1,0 +1,86 @@
+<div class="site-layout__feedback">
+    <section class="site-feedback">
+        <div class="site-feedback__container container">
+            <div class="site-feedback__inner-container inner-container">
+                <div class="feedback-top">
+                    <div class="feedback-top__wrapper wrapper">
+                        <div class="feedback-top__container-title">
+                            <h2 class="section-title">Остались вопросы?</h2>
+                        </div>
+                        <div class="feedback-top__container-tip">
+                            <p class="feedback-tip">
+                                Свяжитесь с нами, и мы развеем
+                                оставшиеся у вас сомнения!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-middle">
+                    <div class="feedback-middle__wrapper wrapper">
+                        <form class="feedback-form" action="#" method="post">
+                            <div class="feedback-form__form-group">
+                                <label class="feedback-form__label" for="user-name">
+                                    Представьтесь, пожалуйста:
+                                </label>
+                                <input class="feedback-form__input" type="text" name="user-name"
+                                       id="user-name" placeholder="Имя &laquo;Прозвище&raquo; Фамилия" required>
+                            </div>
+                            <div class="feedback-form__form-group form-group-row">
+                                <div class="feedback-form__form-group">
+                                    <label class="feedback-form__label" for="user-phone">
+                                        Контактный телефон:
+                                    </label>
+                                    <input class="feedback-form__input" type="text" name="user-phone"
+                                           id="user-phone" placeholder="8 (XXX) XXX-XX-XX" required>
+                                </div>
+                                <div class="feedback-form__form-group form-group-email">
+                                    <label class="feedback-form__label" for="user-email">
+                                        Электронная почта:
+                                    </label>
+                                    <input class="feedback-form__input input-email" type="email" name="user-email"
+                                           id="user-email" placeholder="E-mail" required>
+                                </div>
+                            </div>
+                            <div class="feedback-form__form-group form-group-checkbox">
+                                <label class="checkbox-label">
+                                    <input class="feedback-form__checkbox" type="checkbox" name="subscription" checked>
+                                    <span class="checkbox-container"></span>
+                                    <span class="checkbox-label-text">Я согласен получать спам и смс на телефон</span>
+                                </label>
+                            </div>
+                            <div class="feedback-form__form-group form-group-select">
+                                <label class="feedback-form__label" for="subject">
+                                    Тема обращения:
+                                </label>
+                                <select class="feedback-form__select" name="subject" id="subject">
+                                    <option class="feedback-form__option" value="delivery">
+                                        Условия доставки
+                                    </option>
+                                    <option class="feedback-form__option" value="refund">
+                                        Возврат товара
+                                    </option>
+                                    <option class="feedback-form__option" value="сomplaint">
+                                        Жалоба в Роспотребнадзор
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="feedback-form__form-group">
+                                <label class="feedback-form__label" for="message">
+                                    Текст обращения:
+                                </label>
+                                <textarea class="feedback-form__textarea" name="message"
+                                          id="message" cols="30" rows="5" placeholder="Введите текст вашего обращения"></textarea>
+                            </div>
+                            <div class="feedback-form__form-group form-group-button">
+                                <button class="feedback-form__btn btn btn_brown">
+                                    Отправить
+                                </button>
+                            </div>
+                        </form>
+                        <div class="feedback-middle__image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

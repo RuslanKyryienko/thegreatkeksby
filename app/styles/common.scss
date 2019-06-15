@@ -66,6 +66,12 @@ svg > path {
   transition: fill 0.5s ease;
 }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 a:active, a:hover {
   outline: 0;
   text-decoration: none;
@@ -158,150 +164,79 @@ input[type=number] {
 
 select {
   background: transparent;
-}
-/*---End Reset---*/
-
-/*---Custom---*/
-
-html {
-  font-size: 100%;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 :before, :after {
   box-sizing: border-box;
 }
+/*---End Reset---*/
 
-.site-layout,
-.site-layout__container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+/*---Custom---*/
+
+.section-title, .feauture-title, .footer-nav__nav-title,
+.footer-bottom__tip {
+  font-family: Georgia, sans-serif;
+  font-weight: bold;
+  color: #a38b70;
+}
+
+.section-title {
+  font-size: 2.8125em;
+}
+
+.feauture-title {
+  font-size: 1.875em;
+}
+
+.footer-nav__nav-title, .footer-bottom__tip {
+  font-size: 1.5em;
 }
 
 .site-layout {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
   min-width: 320px;
   max-width: 2560px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Arial, sans-serif;
+  width: 100%;
+  font-family: Arial, Roboto, Tahoma, sans-serif;
   color: #404040;
   font-weight: 400;
+  background-color: #909090;
+}
+
+.site-layout__container {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .container {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   padding-left: 30px;
   padding-right: 30px;
 }
 
 .inner-container {
-  position: relative;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+  flex-direction: column;
   max-width: 1020px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.flex-column-1-0-100p {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.site-layout__cat-reference,
-.site-layout__goods {
-  background: #f2f2f2;
-}
-
-.site-header,
-.site-footer {
-  color: #fff;
-}
-
-.header-top,
-.cat-reference-top,
-.reviews-top,
-.goods-top,
-.feedback-top,
-.footer-top {
-  width: 100%;
+.wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 63px;
-}
-
-.section-title,
-.list-title,
-.footer-bold-text {
-  font-family: Georgia, sans-serif;
-  font-weight: 700;
-  line-height: 1;
-  color: #a38b70;
-}
-
-.section-title {
-  font-size: 2.6em;
-}
-
-.list-title,
-.footer-bold-text {
-  font-size: 1.5em;
-}
-
-.cat-reference-top__section-title,
-.reviews-top__section-title,
-.goods-top__section-title,
-.feedback-top__section-title,
-.goods-bottom__section-title {
-  margin: 1px auto auto 0;
-}
-
-.header-middle,
-.cat-reference-middle,
-.reviews-middle,
-.goods-middle,
-.feedback-middle,
-.footer-middle,
-.goods-bottom,
-.footer-bottom,
-.site-layout__main,
-.btn-container,
-.btn-brown-container,
-.btn-goodcard-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.btn-container {
-  max-width: 166px;
-}
-
-.btn-brown-container {
-  max-width: 142px;
-}
-
-.btn-goodcard-container {
-  max-width: 126px;
 }
 
 .btn {
+  width: 166px;
   padding-top: 13px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   font-family: Arial, sans-serif;
   font-size: 1.125em;
   text-align: center;
@@ -320,58 +255,35 @@ a {
   color: rgba(141, 116, 90, 0.3);
 }
 
-.btn-quick-order {
-  padding-top: 14px;
+.btn--quick-order {
   color: #fff;
   border-color: #fff;
 }
 
-.btn-quick-order:hover {
+.btn--quick-order:hover {
   color: #404040;
   background-color: #fff;
 }
 
-.btn-quick-order:active {
+.btn--quick-order:active {
   color: #d2d2d2;
 }
 
-.btn-brown {
+.btn_brown {
+  width: 142px;
   padding-top: 13px;
   padding-bottom: 13px;
   background-color: #a38b70;
   color: #fff;
 }
 
-.btn-brown:hover {
+.btn_brown:hover {
   color: #fff;
   background-color: #8d745a;
   border-color: #8d745a;
 }
 
-.btn-brown:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.definition-term__link {
-  position: relative;
-  transition: all .2s;
-}
-
-.definition-term__link::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 104%;
-  width: 8px;
-  height: 8px;
-  background: url("../img/icons/sprite.png") -20px -20px no-repeat;
-}
-
-.definition-term__link:hover {
-  color: #8d745a;
-}
-
-.definition-term__link:active {
+.btn_brown:active {
   color: rgba(255, 255, 255, 0.3);
 }
 /*---End Custom---*/
